@@ -11,7 +11,7 @@ public class Exercicio6 {
 
         if (idade < 16) {
             System.out.println("Você não pode votar.");
-        } else if (idade >= 16 && idade <= 17) {
+        } else if (idade <= 17) {
             System.out.println("O voto é facultativo.");
         } else if (idade > 65) {
             System.out.println("O voto é facultativo.");
