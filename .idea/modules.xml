@@ -4,10 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExerciciosAula02/ExerciciosAula02.iml" filepath="$PROJECT_DIR$/ExerciciosAula02/ExerciciosAula02.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-Caldeira.iml" filepath="$PROJECT_DIR$/.idea/Java-Caldeira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerciciosAula05/exercicio0105/exercicio0105.iml" filepath="$PROJECT_DIR$/exerciciosAula05/exercicio0105/exercicio0105.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerciciosAula05/exercicio0205/exercicio0205.iml" filepath="$PROJECT_DIR$/exerciciosAula05/exercicio0205/exercicio0205.iml" />
       <module fileurl="file://$PROJECT_DIR$/exerciciosAula04/exercicio0304/exercicio0304.iml" filepath="$PROJECT_DIR$/exerciciosAula04/exercicio0304/exercicio0304.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicios-05-09-2023/exercicios-05-09-2023.iml" filepath="$PROJECT_DIR$/exercicios-05-09-2023/exercicios-05-09-2023.iml" />
       <module fileurl="file://$PROJECT_DIR$/exerciciosAula03/exerciciosAula03.iml" filepath="$PROJECT_DIR$/exerciciosAula03/exerciciosAula03.iml" />
       <module fileurl="file://$PROJECT_DIR$/exerciciosAula04/exerciciosAula04.iml" filepath="$PROJECT_DIR$/exerciciosAula04/exerciciosAula04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exerciciosAula05/exerciciosAula05.iml" filepath="$PROJECT_DIR$/exerciciosAula05/exerciciosAula05.iml" />
     </modules>
   </component>
 </project>
