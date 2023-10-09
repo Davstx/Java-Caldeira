@@ -13,7 +13,7 @@ public class Main {
             System.out.print("Escolha uma opção: ");
 
             int escolha = scanner.nextInt();
-            scanner.nextLine();  // Limpar o buffer
+            scanner.nextLine();
 
             switch (escolha) {
                 case 1:
