@@ -19,18 +19,20 @@ public class TaskService {
         tasks.add(task);
     }
 
-    public void editTask(Long taskId, Task updatedTask) {
+    public boolean editTask(Long taskId, Task updatedTask) {
         for (Task task : tasks) {
             if (task.getId().equals(taskId)) {
                 task.setDescricao(updatedTask.getDescricao());
                 task.setDataDeVencimento(updatedTask.getDataDeVencimento());
                 task.setConcluida(updatedTask.isConcluida());
-                break;
+                return true;
             }
         }
+        return false;
     }
 
-    public void deleteTask(Long taskId) {
-        tasks.removeIf(task -> task.getId().equals(taskId));
+    public boolean deleteTask(Long taskId) {
+        return tasks.removeIf(task -> task.getId().equals(taskId));
     }
+
 }
