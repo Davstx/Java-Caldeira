@@ -6,6 +6,10 @@
       <sourceFolder url="file://$MODULE_DIR$/rest-service/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rest-service/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/rest-service/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/exerciciosAula01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exerciciosAula02/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exerciciosAula03/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/exerciciosAula04/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
