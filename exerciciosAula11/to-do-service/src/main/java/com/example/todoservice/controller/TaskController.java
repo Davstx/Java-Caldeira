@@ -1,45 +1,40 @@
 package com.example.todoservice.controller;
-import com.example.todoservice.Task;
-import jakarta.annotation.PostConstruct;
+
+import com.example.todoservice.model.Task;
+import com.example.todoservice.service.TaskService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/tasks")
 public class TaskController {
 
-    private List<Task> tasks = new ArrayList<>();
+    private final TaskService taskService;
+
+    @Autowired
+    public TaskController(TaskService taskService) {
+        this.taskService = taskService;
+    }
 
     @GetMapping
     public List<Task> getAllTasks() {
-        return tasks;
+        return taskService.getAllTasks();
     }
 
     @PostMapping("/add")
     public void addTask(@RequestBody Task task) {
-        tasks.add(task);
+        taskService.addTask(task);
     }
 
     @PutMapping("/edit/{taskId}")
     public void editTask(@PathVariable Long taskId, @RequestBody Task updatedTask) {
-        Optional<Task> existingTask = tasks.stream()
-                .filter(task -> task.getId().equals(taskId))
-                .findFirst();
-
-        existingTask.ifPresent(task -> {
-            task.setDescricao(updatedTask.getDescricao());
-            task.setDataDeVencimento(updatedTask.getDataDeVencimento());
-            task.setConcluida(updatedTask.isConcluida());
-        });
+        taskService.editTask(taskId, updatedTask);
     }
 
     @DeleteMapping("/delete/{taskId}")
     public void deleteTask(@PathVariable Long taskId) {
-        tasks.removeIf(task -> task.getId().equals(taskId));
+        taskService.deleteTask(taskId);
     }
-
 }

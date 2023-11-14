@@ -1,9 +1,15 @@
-package com.example.todoservice;
+package com.example.todoservice.model;
+import javax.validation.constraints.Future;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public class Task {
+    @NotNull(message = "O campo 'id' não pode ser nulo")
     private Long id;
+    @NotBlank(message = "A descrição não pode estar em branco")
     private String descricao;
+    @Future(message = "A data de vencimento deve ser no futuro")
     private LocalDate dataDeVencimento;
     private boolean concluida;
 
